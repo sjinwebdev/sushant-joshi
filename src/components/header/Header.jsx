@@ -11,7 +11,7 @@ const Header = ({ isVideo = true, url = "", header_text }) => {
   useEffect(() => {
     //event listener function
     const handleScroll = () => {
-      if (window.scrollY >= 20) {
+      if (window.scrollY >= 25) {
         setHideDownArrow(true);
       } else {
         setHideDownArrow(false);

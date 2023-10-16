@@ -116,6 +116,9 @@ video {
   .photography__header-content-btn img {
     width: 20px;
   }
+  .photography__header-downArrow {
+    margin-bottom: 15px;
+  }
   .photography__header-downArrow img {
     width: 30px;
   }
