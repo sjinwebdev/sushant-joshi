@@ -1,0 +1,92 @@
+.photography__explore {
+  background: #cdcdcd34;
+}
+.photography__explore_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.photography__explore_btn button {
+  border: none;
+  outline: none;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(20, 35, 122, 0.751) 16%,
+    rgb(43, 107, 144) 100%
+  );
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 4rem;
+  border-radius: 10px;
+  font-family: var(--font-family);
+  font-size: 26px;
+  color: #eee;
+  font-weight: 600;
+  cursor: pointer;
+}
+.photography__explore_btn button:hover {
+  opacity: 0.9;
+}
+/* background: radial-gradient(
+    circle at 50% 50%,
+    rgba(51, 70, 178, 0.72) 16%,
+    rgba(130, 198, 238, 1) 100%
+  ); */
+
+@media screen and (max-width: 1024px) {
+  .photography__explore_btn button {
+    gap: 1rem;
+    padding: 1rem 2rem;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .photography__explore_btn img {
+    width: 35px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .photography__explore {
+    padding: 5rem 1.5rem;
+  }
+  .photography__explore_btn button {
+    gap: 1rem;
+    padding: 1rem 2rem;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .photography__explore_btn img {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .photography__explore {
+    padding: 5rem 0.5rem;
+  }
+  .photography__explore_btn button {
+    gap: 0.5rem;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .photography__explore_btn img {
+    width: 23px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .photography__explore {
+    padding: 3rem 0.2rem;
+  }
+  .photography__explore_btn button {
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .photography__explore_btn img {
+    width: 18px;
+  }
+}

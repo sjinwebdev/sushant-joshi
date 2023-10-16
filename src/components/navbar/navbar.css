@@ -1,0 +1,122 @@
+.photography__navbar {
+  width: 100%;
+  position: absolute; /*moved out from document flow*/
+  top: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  z-index: 100;
+}
+.photography__navbar-logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.photography__navbar-logo img {
+  width: 330px;
+}
+.photography__navbar-links__container {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+}
+.photography__navbar-links__container p {
+  font-family: var(--font-family);
+  color: #eee;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 600;
+  text-align: center;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  width: 140px;
+}
+.photography__navbar-links__container p:hover {
+  border-color: rgba(238, 238, 238, 0.601);
+}
+.photography__navbar-links__container a {
+  display: block;
+  width: 100%;
+}
+.photography__navbar-menu {
+  display: none;
+  position: relative;
+}
+.photography__navbar-menu_container {
+  padding: 2rem;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  min-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+  background: var(--color-menu);
+}
+.photography__navbar-menu_container-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+.photography__navbar-menu_container-links p {
+  color: #eee;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 600;
+}
+.photography__navbar-menu_container-links p:hover {
+  color: #eeeeeea5;
+}
+@media only screen and (max-width: 1120px) {
+  .photography__navbar-logo img {
+    width: 250px;
+  }
+
+  .photography__navbar-links__container {
+    gap: 1rem;
+  }
+  .photography__navbar-links__container p {
+    font-size: 16px;
+    line-height: 30px;
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  .photography__navbar-links__container {
+    display: none;
+  }
+  .photography__navbar-menu {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .photography__navbar-menu_container-links p {
+    color: #eee;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .photography__navbar-menu_container-links {
+    gap: 0.5rem;
+  }
+  .photography__navbar-logo img {
+    width: 180px;
+  }
+  .photography__navbar {
+    padding: 1rem 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .photography__navbar-logo img {
+    width: 150px;
+  }
+}

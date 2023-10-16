@@ -1,0 +1,85 @@
+.photography__slideshow {
+  padding: 1rem;
+}
+/* Looper styles */
+@keyframes slideAnim {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.looper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.looper__innerList {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.looper__innerList[data-animate="true"] .looper__listInstance {
+  animation: slideAnim linear infinite;
+}
+
+.looper__listInstance {
+  display: flex;
+  width: max-content;
+  animation: none;
+}
+
+/* Example content styles */
+
+.contentBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 306px;
+  width: 525px;
+  margin-right: 3rem;
+  /* ----- */
+  overflow: hidden; /* Maintain aspect ratio */
+  border-radius: 10px; /* Apply border-radius */
+}
+.contentBlock img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio */
+}
+/* .contentBlock img {
+  width: 100%;
+} */
+
+@media screen and (max-width: 1025px) {
+  .contentBlock {
+    height: 290px;
+    width: 500px;
+    margin-right: 3rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .contentBlock {
+    height: 240px;
+    width: 420px;
+    margin-right: 3rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .contentBlock {
+    height: 200px;
+    width: 300px;
+    margin-right: 3rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contentBlock {
+    height: 170px;
+    width: 250px;
+    margin-right: 3rem;
+  }
+}
