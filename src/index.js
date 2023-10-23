@@ -12,7 +12,7 @@ const container = document.getElementById("root");
 const root = createRoot(container);
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/">
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/about-sj" element={<AboutSj />} />
