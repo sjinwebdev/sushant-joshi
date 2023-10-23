@@ -1,28 +1,34 @@
 import React from "react";
 import "./footer.css";
+import { Link } from "react-router-dom";
 import insta from "../../assets/instagram_.png";
 import fb from "../../assets/facebook_.png";
 import ytb from "../../assets/youtube_.png";
+import { useEffect } from "react";
 
 const Menu = () => (
   //fragment
   <>
-    <p>
-      <a href="#about-sj">About SJ</a>
-    </p>
-    <p>
-      <a href="#gallery">Gallery</a>
-    </p>
-    <p>
-      <a href="#blog">Blog</a>
-    </p>
-    <p>
-      <a href="#contact-sj">Contact SJ</a>
-    </p>
+    <Link to="/about-sj">
+      <p>About SJ</p>
+    </Link>
+    <Link to="/galleries">
+      <p>Gallery</p>
+    </Link>
+    <Link to="/stories">
+      <p>Blog</p>
+    </Link>
+    <Link to="/contact-sj">
+      <p>Contact SJ</p>
+    </Link>
   </>
 );
 
 const Footer = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="photography__footer">
       <div className="photography__footer-content">
@@ -31,15 +37,15 @@ const Footer = () => {
         </div>
         <div className="photography__footer-right">
           <div className="photography__footer-right_social-media">
-            <h3>Follow Sushant</h3>
+            <p>Follow Sushant</p>
             <div className="icons">
-              <a href="">
+              <a href="www.instagram.com">
                 <img src={insta} alt="instagram" />
               </a>
-              <a href="">
+              <a href="www.facebook.com">
                 <img src={fb} alt="facebook" />
               </a>
-              <a href="">
+              <a href="www.youtube.com">
                 <img src={ytb} alt="youtube" />
               </a>
             </div>

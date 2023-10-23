@@ -40,10 +40,7 @@
 .photography__navbar-links__container p:hover {
   border-color: rgba(238, 238, 238, 0.601);
 }
-.photography__navbar-links__container a {
-  display: block;
-  width: 100%;
-}
+
 .photography__navbar-menu {
   display: none;
   position: relative;

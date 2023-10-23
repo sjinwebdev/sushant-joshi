@@ -12,7 +12,7 @@ a {
   width: 100%;
 }
 .section__padding {
-  padding: 9rem 5rem;
+  padding: 6rem 5rem;
 }
 .shadow-drop-2-tr {
   -webkit-animation: shadow-drop-2-tr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)

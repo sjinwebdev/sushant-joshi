@@ -2,22 +2,23 @@ import React, { useState } from "react";
 import "./navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/Main-Logo.png";
+import { Link } from "react-router-dom";
 
 const Menu = () => (
   //fragment
   <>
-    <p>
-      <a href="#about-sj">About SJ</a>
-    </p>
-    <p>
-      <a href="#gallery">Gallery</a>
-    </p>
-    <p>
-      <a href="#blog">Blog</a>
-    </p>
-    <p>
-      <a href="#contact-sj">Contact SJ</a>
-    </p>
+    <Link to="/about-sj">
+      <p>About SJ</p>
+    </Link>
+    <Link to="/galleries">
+      <p>Gallery</p>
+    </Link>
+    <Link to="/stories">
+      <p>Blog</p>
+    </Link>
+    <Link to="/contact-sj">
+      <p>Contact SJ</p>
+    </Link>
   </>
 );
 
@@ -26,9 +27,9 @@ const Navbar = () => {
   return (
     <div className="photography__navbar">
       <div className="photography__navbar-logo">
-        <a href="#home">
+        <Link to="/">
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
       </div>
       <div className="photography__navbar-links__container">
         <Menu />

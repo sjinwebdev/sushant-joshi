@@ -1,0 +1,115 @@
+.photography__aboutSj-content {
+  font-family: var(--font-family);
+  width: 100%;
+  color: rgb(24, 24, 24);
+  padding: 6rem 8rem;
+}
+.photography__aboutSj-content h1 {
+  font-size: 35px;
+  font-weight: 800;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+}
+
+.photography__aboutSj-content p {
+  text-align: justify;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  word-spacing: 2px;
+  font-weight: 400;
+  padding: 1rem 0;
+  line-height: 28px;
+}
+.photography__aboutSj-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.photography__aboutSj-content p:last-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 850px) {
+  .photography__aboutSj-content {
+    padding: 4rem;
+  }
+  .photography__aboutSj-content h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .photography__aboutSj-content h3 {
+    font-size: 20px;
+  }
+  .photography__aboutSj-content p {
+    font-size: 16px;
+  }
+  .photography__aboutSj-content p:last-child {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .photography__aboutSj-content {
+    padding: 3rem;
+  }
+  .photography__aboutSj-content h1 {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+  .photography__aboutSj-content .heading-bar {
+    max-width: 350px;
+  }
+  .photography__aboutSj-content h3 {
+    font-size: 18px;
+  }
+  .photography__aboutSj-content p {
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .photography__aboutSj-content p:last-child {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .photography__aboutSj-content {
+    padding: 3rem 2rem;
+  }
+  .photography__aboutSj-content h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  .photography__aboutSj-content .heading-bar {
+    width: 280px;
+  }
+  .photography__aboutSj-content h3 {
+    font-size: 16px;
+  }
+  .photography__aboutSj-content p {
+    line-height: 22px;
+    font-size: 12px;
+  }
+  .photography__aboutSj-content p:last-child {
+    font-size: 15px;
+    letter-spacing: 0;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .photography__aboutSj-content {
+    padding: 3rem 1rem;
+  }
+  .photography__aboutSj-content h1 {
+    font-size: 22px;
+  }
+  .photography__aboutSj-content .heading-bar {
+    width: 250px;
+  }
+  .photography__aboutSj-content h3 {
+    font-size: 14px;
+  }
+  .photography__aboutSj-content p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .photography__aboutSj-content p:last-child {
+    font-size: 14px;
+  }
+}

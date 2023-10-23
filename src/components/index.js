@@ -4,3 +4,6 @@ export { default as Slideshow } from "./slideshow/Slideshow";
 export { default as Explore } from "./explore/Explore";
 export { default as Featured } from "./featured/Featured";
 export { default as Footer } from "./footer/Footer";
+export { default as Gallery } from "./gallery/Gallery";
+export { default as CTA } from "./CTA/CTA";
+export { default as Blog } from "./blog/Blog";

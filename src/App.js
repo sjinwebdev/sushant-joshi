@@ -21,3 +21,5 @@ const App = () => {
 };
 
 export default App;
+// link to github put inside package.json
+// "https://sjinwebdev.github.io/sushant-joshi"

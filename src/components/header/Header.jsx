@@ -3,6 +3,7 @@ import Navbar from "../navbar/Navbar";
 import right_arrow from "../../assets/right_arrow.png";
 import down_arrow from "../../assets/down-arrow.png";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Header = ({ isVideo = true, url = "", header_text }) => {
   // used chatGpt for scroll logic, used for downArrow
@@ -36,7 +37,9 @@ const Header = ({ isVideo = true, url = "", header_text }) => {
               {header_text}
             </h1>
             <div className="photography__header-content-btn">
-              <button>Visit Gallery</button>
+              <Link to="/galleries">
+                <button>Visit Gallery</button>
+              </Link>
               <img src={right_arrow} alt="" />
             </div>
           </div>

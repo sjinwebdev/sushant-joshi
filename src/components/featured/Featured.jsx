@@ -3,8 +3,14 @@ import "./featured.css";
 import featured_1 from "../../media/featured_stories/featured_1.jpg";
 import featured_2 from "../../media/featured_stories/featured_2.jpg";
 import right_arrow from "../../assets/right_arrow.png";
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const Featured = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="photography__featured">
       <div className="photography__featured-heading">
@@ -27,10 +33,12 @@ const Featured = () => {
           </div>
         </div>
       </div>
-      <button className="photography__featured-btn">
-        See More Stories
-        <img src={right_arrow} alt="" />
-      </button>
+      <Link to="/stories">
+        <button className="photography__featured-btn">
+          See More Stories
+          <img src={right_arrow} alt="" />
+        </button>
+      </Link>
     </div>
   );
 };

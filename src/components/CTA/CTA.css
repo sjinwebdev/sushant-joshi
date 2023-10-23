@@ -1,0 +1,170 @@
+.photography__CTA {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2rem 4rem 8rem 4rem;
+}
+.photography__CTA-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family);
+  background: var(--color-cta);
+  filter: var(--filter-cta);
+  color: #eee;
+  padding: 3rem 4rem;
+  border-radius: 10px;
+}
+.photography__CTA-container_text {
+  flex: 1;
+}
+.photography__CTA-container_text h2 {
+  letter-spacing: 1px;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 800;
+  text-align: left;
+}
+.photography__CTA-container_text p {
+  letter-spacing: 1px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.photography__CTA-container_btn {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.photography__CTA-container_btn button {
+  background: none;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  color: #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  font-size: 20px;
+  padding: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.photography__CTA-container_btn button img {
+  width: 25px;
+}
+.photography__CTA-container_btn button:hover {
+  border-color: rgba(238, 238, 238, 0.601);
+}
+@media only screen and (max-width: 1025px) {
+  .photography__CTA {
+    padding: 2rem 10rem 6rem;
+  }
+  .photography__CTA-container_text h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .photography__CTA-container_btn button {
+    gap: 1rem;
+
+    font-size: 18px;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .photography__CTA {
+    padding: 2rem 10rem 6rem;
+  }
+  .photography__CTA-container {
+    padding: 3rem;
+  }
+
+  .photography__CTA-container_text h2 {
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: 0;
+  }
+  .photography__CTA-container_btn button {
+    gap: 0.5rem;
+    font-size: 16px;
+    padding: 0.5rem;
+    border-width: 1px;
+  }
+  .photography__CTA-container_text p {
+    font-size: 12px;
+  }
+  .photography__CTA-container_btn button img {
+    width: 20px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .photography__CTA {
+    padding: 2rem 6rem 6rem;
+  }
+
+  .photography__CTA-container {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+  }
+  .photography__CTA-container_btn {
+    justify-content: center;
+  }
+  .photography__CTA-container_text h2 {
+    text-align: center;
+  }
+  .photography__CTA-container_text p {
+    text-align: center;
+  }
+  .photography__CTA-container_text p {
+    font-size: 12px;
+  }
+  .photography__CTA-container_btn button img {
+    width: 15px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .photography__CTA {
+    padding: 2rem 3rem 6rem;
+  }
+
+  .photography__CTA-container {
+    padding: 2rem;
+  }
+  .photography__CTA-container_btn {
+    justify-content: center;
+  }
+  .photography__CTA-container_text p {
+    font-size: 12px;
+  }
+  .photography__CTA-container_text h2 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .photography__CTA-container_btn button {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .photography__CTA {
+    padding: 2rem 2rem 4rem;
+  }
+  .photography__CTA-container {
+    padding: 1rem 2rem;
+  }
+  .photography__CTA-container_text h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .photography__CTA-container_btn button {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+}

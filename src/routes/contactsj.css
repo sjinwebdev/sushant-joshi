@@ -1,0 +1,76 @@
+.photography__contactsj {
+  width: 100%;
+}
+.photography__contactSj_navbar {
+  height: 140px;
+  width: 100%;
+  background: var(--color-cta);
+}
+.photography__contactSj-content {
+  width: 100%;
+  font-family: var(--font-family);
+  padding: 6rem 0 6rem 0;
+  text-align: center;
+}
+.photography__contactSj-content h1 {
+  font-size: 35px;
+  line-height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+  min-width: 150px;
+  text-align: center;
+  font-weight: 800;
+}
+.photography__contactSj-content h3 {
+  font-size: 22px;
+  line-height: 45px;
+  margin-top: 1rem;
+}
+.photography__contactSj-content p {
+  font-size: 18px;
+  line-height: 28px;
+}
+@media only screen and (max-width: 850px) {
+  .photography__contactSj-content h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .photography__contactSj-content h3 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .photography__contactSj-content h1 {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+  .photography__contactSj-content h3 {
+    font-size: 18px;
+  }
+  .photography__contactSj-content p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .photography__contactSj_navbar {
+    height: 100px;
+  }
+  .photography__contactSj-content h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+  .photography__contactSj-content h3 {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .photography__contactSj-content h1 {
+    font-size: 22px;
+  }
+  .photography__contactSj-content h3 {
+    font-size: 14px;
+  }
+  .photography__contactSj-content p {
+    font-size: 14px;
+  }
+}

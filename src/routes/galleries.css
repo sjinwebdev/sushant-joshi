@@ -1,0 +1,33 @@
+.photography__galleries-container {
+  width: 100%;
+  padding: 6rem;
+}
+.photography__galleries-container h1 {
+  width: 100%;
+  font-family: var(--font-family);
+  font-size: 35px;
+  font-weight: 800;
+  padding-bottom: 2rem;
+  letter-spacing: 2px;
+  text-align: left;
+}
+@media only screen and (max-width: 769px) {
+  .photography__galleries-container {
+    width: 100%;
+    padding: 4rem;
+  }
+  .photography__galleries-container h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .photography__galleries-container {
+    width: 100%;
+    padding: 2rem;
+  }
+  .photography__galleries-container h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+}

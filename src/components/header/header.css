@@ -30,7 +30,7 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .photography__header-content-heading {

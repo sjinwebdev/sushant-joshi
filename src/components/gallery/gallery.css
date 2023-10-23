@@ -1,0 +1,116 @@
+.photography__gallery {
+  padding-top: 2rem;
+  width: 100%;
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.photography__gallery h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(62, 62, 62);
+  margin-bottom: 1.5rem;
+}
+.photography__gallery select {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  filter: var(--filter-cta);
+  margin-bottom: 6rem;
+}
+
+.photography__gallery option {
+  font-size: 18px;
+}
+.photography__gallery-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.photography__gallery-images img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 540px;
+  height: 100%;
+  max-height: 580px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  filter: var(--filter-cta);
+  border: 1px solid black;
+}
+
+/* Define a CSS class for the pop-out effect */
+@media only screen and (max-width: 1025px) {
+  .photography__gallery h3 {
+    margin-bottom: 1rem;
+    font-size: 17px;
+  }
+  .photography__gallery select {
+    font-size: 17px;
+    margin-bottom: 4rem;
+  }
+  .photography__gallery option {
+    font-size: 17px;
+  }
+  .photography__gallery-images img {
+    max-width: 450px;
+    max-height: 450px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .photography__gallery h3 {
+    margin-bottom: 1rem;
+    font-size: 16px;
+  }
+  .photography__gallery select {
+    font-size: 17px;
+    margin-bottom: 4rem;
+  }
+  .photography__gallery option {
+    font-size: 17px;
+  }
+  .photography__gallery-images {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+  }
+  .photography__gallery-images img {
+    max-width: 500px;
+    max-height: 530px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .photography__gallery h3 {
+    margin-bottom: 1rem;
+    font-size: 14px;
+  }
+  .photography__gallery select {
+    font-size: 14px;
+
+    width: 200px;
+  }
+
+  .photography__gallery-images img {
+    max-width: 426px;
+    max-height: 400px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .photography__gallery-images img {
+    max-width: 376px;
+    max-height: 340px;
+  }
+}
