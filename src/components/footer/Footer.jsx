@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import insta from "../../assets/instagram_.png";
 import fb from "../../assets/facebook_.png";
 import ytb from "../../assets/youtube_.png";
+import topPg from "../../assets/top.png";
 import { useEffect } from "react";
 
 const Menu = () => (
@@ -16,7 +17,7 @@ const Menu = () => (
       <p>Gallery</p>
     </Link>
     <Link to="/stories">
-      <p>Blog</p>
+      <p>Stories</p>
     </Link>
     <Link to="/contact-sj">
       <p>Contact SJ</p>
@@ -24,6 +25,15 @@ const Menu = () => (
   </>
 );
 
+//function for top btn
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+//clicking on webpages moves viewport view to top, useffect can only be used inside the body of function component
+//that's why created scrollTop it doens't work inside jsx
 const Footer = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -32,6 +42,10 @@ const Footer = () => {
   return (
     <div className="photography__footer">
       <div className="photography__footer-content">
+        <div className="to-top" onClick={scrollToTop}>
+          <p className="to-top-text">Back to Top</p>
+          <img src={topPg} alt="top" title="scroll to top" />
+        </div>
         <div className="photography__footer-left">
           <Menu />
         </div>
@@ -39,13 +53,26 @@ const Footer = () => {
           <div className="photography__footer-right_social-media">
             <p>Follow Sushant</p>
             <div className="icons">
-              <a href="www.instagram.com">
+              {/* rel="noopener noreferrer" prevents phishing in older browsers */}
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={insta} alt="instagram" />
               </a>
-              <a href="www.facebook.com">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={fb} alt="facebook" />
               </a>
-              <a href="www.youtube.com">
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={ytb} alt="youtube" />
               </a>
             </div>

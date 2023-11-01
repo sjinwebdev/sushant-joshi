@@ -106,6 +106,37 @@
   font-size: 14px;
   letter-spacing: 1px;
 }
+.to-top {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1rem;
+  padding: 2px;
+  gap: 5px;
+  background: #eee;
+  border-radius: 5px;
+}
+.to-top-text {
+  text-align: center;
+  padding: 0 2px;
+}
+
+.to-top img {
+  width: 24px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .to-top img {
+    width: 22px;
+  }
+  .to-top {
+    margin-top: -40px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .photography__footer-left p {
@@ -136,6 +167,15 @@
   }
   .email-list button {
     font-size: 16px;
+  }
+  .to-top {
+    margin-top: -40px;
+  }
+  .to-top-text {
+    font-size: 14px;
+  }
+  .to-top img {
+    width: 22px;
   }
 }
 
@@ -172,6 +212,16 @@
   .photography_footer-copyright p {
     font-size: 10px;
   }
+  .to-top {
+    margin-top: -35px;
+    gap: 3px;
+  }
+  .to-top-text {
+    font-size: 12px;
+  }
+  .to-top img {
+    width: 20px;
+  }
 }
 @media only screen and (max-width: 380px) {
   .photography__footer-left p {
@@ -199,5 +249,14 @@
   }
   .email-list button {
     font-size: 14px;
+  }
+  .to-top img {
+    width: 18px;
+  }
+  .to-top-text {
+    font-size: 10px;
+  }
+  .to-top img {
+    width: 16px;
   }
 }

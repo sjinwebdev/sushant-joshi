@@ -1,5 +1,4 @@
 import "./header.css";
-import Navbar from "../navbar/Navbar";
 import right_arrow from "../../assets/right_arrow.png";
 import down_arrow from "../../assets/down-arrow.png";
 import { useState, useEffect } from "react";
@@ -27,8 +26,7 @@ const Header = ({ isVideo = true, url = "", header_text }) => {
   }, []);
 
   return (
-    <div className="photography__header">
-      <Navbar />
+    <div className="photography__header" id="top">
       {isVideo ? (
         <>
           <video src={url} autoPlay loop muted preload="auto" />
@@ -36,12 +34,13 @@ const Header = ({ isVideo = true, url = "", header_text }) => {
             <h1 className="photography__header-content-heading">
               {header_text}
             </h1>
-            <div className="photography__header-content-btn">
-              <Link to="/galleries">
+            <Link to="/galleries">
+              <div className="photography__header-content-btn">
                 <button>Visit Gallery</button>
-              </Link>
-              <img src={right_arrow} alt="" />
-            </div>
+
+                <img src={right_arrow} alt="" />
+              </div>
+            </Link>
           </div>
         </>
       ) : (

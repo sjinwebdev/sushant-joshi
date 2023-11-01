@@ -1,12 +1,13 @@
 import React from "react";
 import "./aboutsj.css";
-import { Header, CTA, Footer } from "../components";
+import { Header, CTA, Footer, Navbar } from "../components";
 
 import bgUrl2 from "../media/background/background_2.jpg";
 
 const AboutSj = () => {
   return (
     <div className="photography__aboutSj">
+      <Navbar wantHome="true" />
       <Header isVideo={false} url={bgUrl2} header_text="" />
 
       <div className="photography__aboutSj-content">

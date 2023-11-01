@@ -6,7 +6,7 @@ const ContactSj = () => {
   return (
     <div className="photography__contactsj">
       <div className="photography__contactSj_navbar">
-        <Navbar />
+        <Navbar wantHome="true" />
       </div>
 
       <div className="photography__contactSj-content">

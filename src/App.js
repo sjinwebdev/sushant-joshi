@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
-import { Header, Explore, Featured, Footer } from "./components";
+import { Header, Explore, Navbar, Featured, Footer } from "./components";
 import bgUrl from "./media/background/background.mp4";
 
 const App = () => {
   return (
     <div className="photography">
       <div className="photography__header-app">
+        <Navbar />
         <Header
           isVideo={true}
           url={bgUrl}

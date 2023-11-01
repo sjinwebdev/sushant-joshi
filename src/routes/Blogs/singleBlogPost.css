@@ -1,0 +1,195 @@
+.photography__singlePost {
+  width: 100%;
+}
+.photography__singlePost-navbar {
+  height: 140px;
+  width: 100%;
+  background: var(--color-cta);
+}
+.photography__singlePost_container {
+  width: 100%;
+  padding: 6rem 10rem;
+}
+.photography__singlePost_container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background: none;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+.photography__singlePost_container button:hover {
+  opacity: 0.9;
+}
+.photography__singlePost_container .arrow-left {
+  width: 25px;
+}
+.photography__singlePost_container-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: #f3f3f3;
+  font-family: var(--font-family);
+  border-radius: 5px;
+  border: 2px solid #c0bfbf;
+  box-shadow: 0.8px 0px 10px rgba(0, 0, 0, 0.035),
+    6px 0px 80px rgba(0, 0, 0, 0.15);
+}
+.photography__singlePost_container-content h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+.photography__singlePost_container-content .date {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 1rem;
+  letter-spacing: 1px;
+}
+.photography__singlePost_container-content img {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+  max-width: 1200px;
+  max-height: 700px;
+  border-radius: 5px;
+}
+.photography__singlePost_container-content .article {
+  width: 100%;
+  text-align: justify;
+  padding: 4rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.photography__singlePost_container-content .article p {
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+/* for the first letter of first paragrapgh */
+.photography__singlePost_container-content .article .first-letter {
+  font-size: 2em;
+  font-weight: 800;
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 1030px) {
+  .photography__singlePost_container {
+    padding: 6rem 4rem;
+  }
+  .photography__singlePost_container-content .article p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .photography__singlePost_container-content h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .photography__singlePost_container-content .date {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .photography__singlePost_container {
+    padding: 6rem 2rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .photography__singlePost_container {
+    padding: 3rem 1rem;
+  }
+  .photography__singlePost_container button {
+    font-size: 15px;
+  }
+  .photography__singlePost_container .arrow-left {
+    width: 22px;
+  }
+
+  .photography__singlePost_container-content {
+    padding: 4rem 1rem;
+  }
+  .photography__singlePost_container-content h2 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .photography__singlePost_container-content .date {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .photography__singlePost_container-content .article {
+    padding: 3rem 0rem 0 0rem;
+    gap: 1rem;
+  }
+  .photography__singlePost_container-content .article p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .photography__singlePost_container button {
+    font-size: 14px;
+  }
+  .photography__singlePost_container .arrow-left {
+    width: 20px;
+  }
+
+  .photography__singlePost_container-content {
+    padding: 2rem 1rem;
+  }
+  .photography__singlePost_container-content h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .photography__singlePost_container-content .date {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .photography__singlePost_container-content .article {
+    padding: 3rem 0rem 0 0rem;
+    gap: 1rem;
+  }
+  .photography__singlePost_container-content .article p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .photography__singlePost_container {
+    padding: 4rem 0.5rem;
+  }
+  .photography__singlePost_container button {
+    font-size: 12px;
+  }
+  .photography__singlePost_container .arrow-left {
+    width: 18px;
+  }
+  .photography__singlePost_container-content .article {
+    padding: 3rem 1rem 0 1rem;
+    gap: 1rem;
+  }
+  .photography__singlePost_container-content .article p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

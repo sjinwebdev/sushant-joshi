@@ -72,7 +72,7 @@ function InfiniteLooper({ speed, direction, children }) {
 
 const Slideshow = () => (
   <div className="photography__slideshow">
-    <InfiniteLooper speed="27" direction="right">
+    <InfiniteLooper speed="26" direction="left">
       <div className="contentBlock contentBlock--one">
         <img src={img1} alt="nigh scape" />
       </div>
@@ -80,16 +80,16 @@ const Slideshow = () => (
         <img src={img2} alt="my pet coco" />
       </div>
       <div className="contentBlock contentBlock--one">
-        <img src={img3} alt="my pet coco" />
+        <img src={img3} alt="sun scenery" />
       </div>
       <div className="contentBlock contentBlock--one">
-        <img src={img4} alt="my pet coco" />
+        <img src={img4} alt="a smiling dragon cloud" />
       </div>
       <div className="contentBlock contentBlock--one">
-        <img src={img5} alt="my pet coco" />
+        <img src={img5} alt="a cattle looking for her mom" />
       </div>
       <div className="contentBlock contentBlock--one">
-        <img src={img6} alt="my pet coco" />
+        <img src={img6} alt="orange stormy clouds" />
       </div>
     </InfiniteLooper>
   </div>

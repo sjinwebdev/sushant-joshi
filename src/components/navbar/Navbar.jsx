@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/Main-Logo.png";
+import homeLogo from "../../assets/home48.png";
 import { Link } from "react-router-dom";
 
 const Menu = () => (
@@ -14,7 +15,7 @@ const Menu = () => (
       <p>Gallery</p>
     </Link>
     <Link to="/stories">
-      <p>Blog</p>
+      <p>Stories</p>
     </Link>
     <Link to="/contact-sj">
       <p>Contact SJ</p>
@@ -22,7 +23,7 @@ const Menu = () => (
   </>
 );
 
-const Navbar = () => {
+const Navbar = ({ wantHome = false }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <div className="photography__navbar">
@@ -33,8 +34,22 @@ const Navbar = () => {
       </div>
       <div className="photography__navbar-links__container">
         <Menu />
+        <div
+          className={`photography__navbar-home ${wantHome ? "" : "hide-home"}`}
+        >
+          <Link to="/">
+            <img src={homeLogo} alt="home" title="home" />
+          </Link>
+        </div>
       </div>
       <div className="photography__navbar-menu">
+        <div
+          className={`photography__navbar-home ${wantHome ? "" : "hide-home"}`}
+        >
+          <Link to="/">
+            <img src={homeLogo} alt="home" title="home" />
+          </Link>
+        </div>
         {toggleMenu ? (
           <RiCloseLine
             color="#fff"
